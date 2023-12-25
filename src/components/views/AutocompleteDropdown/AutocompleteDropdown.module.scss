@@ -1,0 +1,98 @@
+@import '../../../variables.scss';
+
+.dropdown {
+    background: $secondary-bg-color;
+    border-radius: 1rem;
+    position: absolute;
+    width: 100%;
+}
+
+.sectionTitle {
+    padding: 1rem;
+    font-size: 2rem;
+    color: #2d4459;
+    font-weight: bold;
+    margin: 0;
+}
+
+.itemContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.item {
+    color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 8px;
+
+    .itemInfo {
+        font-size: 1.4rem;
+        font-weight: 800;
+        display: flex;
+        gap: 0.5em;
+        align-items: center;
+
+        .itemBadge {
+            margin-top: 2px;
+            border-radius: 6px;
+            width: auto;
+            text-align: center;
+            border: 1px solid $primary-color;
+            padding: 3px;
+            font-size: 13px;
+            font-weight: normal;
+        }
+
+        .itemTitle {
+            flex-shrink: 0;
+        }
+    }
+
+    .itemActions {
+        display: flex;
+        gap: 1rem;
+
+        button {
+            background-color: #6291b3;
+            border: 0;
+            cursor: pointer;
+            border-radius: 1rem;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0 1rem;
+            font-size: 1.2rem;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            transition: background-color 0.15s ease;
+
+            &:hover {
+                background-color: $primary-bg-color;
+            }
+
+            svg {
+                color: #fff;
+            }
+
+            span {
+                color: #fff;
+                font-weight: bold;
+            }
+
+        }
+    }
+}
+
+// Add any specific styles for Arrivals and Departures
+.departure {
+    color: #e74c3c; // Red color for Departures
+}
+
+.arrival {
+    color: #27ae60; // Green color for Arrivals
+}

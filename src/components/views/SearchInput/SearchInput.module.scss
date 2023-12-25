@@ -1,0 +1,28 @@
+.inputContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .inputSearch {
+        padding: 1rem;
+        margin: 1rem auto;
+        border-radius: 0.4rem;
+        border: 0.125rem solid #ccc;
+        font-size: 1.4rem;
+        width: 100%;
+        color: #797979;
+
+        &:active,
+        &:focus {
+            outline: 0;
+
+        }
+    }
+
+    .searchIcon {
+        font-size: 1.2rem;
+        position: absolute;
+        right: 0.75rem;
+        color: #333;
+    }
+}

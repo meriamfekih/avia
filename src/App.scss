@@ -1,0 +1,60 @@
+@import './variables.scss';
+
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+ul[role="navigation"] {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 50px 0;
+
+  li {
+    list-style-type: none;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    a {
+      display: block;
+      color: $primary-color;
+      font-size: 17px;
+      padding-top: 2px;
+
+      &:hover {
+        cursor: pointer;
+        color: $primary-bg-color;
+      }
+    }
+
+
+    &.previous,
+    &.next {
+      a {
+        color: $primary-bg-color;
+        font-size: 28px;
+      }
+    }
+
+    &.active {
+      background: $primary-bg-color;
+      border-radius: 50%;
+      height: 26px;
+      width: 25px;
+      text-align: center;
+
+      a {
+        padding-top: 2px;
+        color: #fff;
+      }
+    }
+
+  }
+
+}
