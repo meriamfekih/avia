@@ -67,15 +67,17 @@ interface ApiResponse<T> {
   data: Array<T>;
 }
 
-interface AirlineInfo {
-  airline_name: string;
-  iata_code: string;
-  icao_code: string;
-}
-
-interface AirportInfo {
+interface AirportData {
   airport_name: string;
   iata_code: string;
   icao_code: string;
+  latitude: string;
+  longitude: string;
+  geoname_id: string;
+  timezone: string;
+  gmt: string;
+  phone_number: null | string;
   country_name: string;
+  country_iso2: string;
+  city_iata_code: string;
 }

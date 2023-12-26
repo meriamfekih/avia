@@ -1,21 +1,22 @@
 @import './variables.scss';
 
 body {
-  margin: 0px;
+  margin: 0;
   font-family: 'Roboto', sans-serif;
-
+  font-size: 16px;
 }
+
 
 ul[role="navigation"] {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   justify-content: center;
-  margin: 50px 0;
+  margin: 3.125rem 0;
 
   li {
     list-style-type: none;
-    height: 30px;
-    width: 30px;
+    height: 1.875rem;
+    width: 1.875rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,8 +25,8 @@ ul[role="navigation"] {
     a {
       display: block;
       color: $primary-color;
-      font-size: 17px;
-      padding-top: 2px;
+      font-size: 1.125rem;
+      padding-top: 0.125rem;
 
       &:hover {
         cursor: pointer;
@@ -38,19 +39,19 @@ ul[role="navigation"] {
     &.next {
       a {
         color: $primary-bg-color;
-        font-size: 28px;
+        font-size: 1.75rem;
       }
     }
 
     &.active {
       background: $primary-bg-color;
       border-radius: 50%;
-      height: 26px;
-      width: 25px;
+      height: 1.625rem;
+      width: 1.625rem;
       text-align: center;
 
       a {
-        padding-top: 2px;
+        padding-top: 0.125rem;
         color: #fff;
       }
     }

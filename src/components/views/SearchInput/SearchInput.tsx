@@ -17,7 +17,7 @@ const SearchInput: FC<SearchInputProps> = ({ value, handleSearchChange }) => {
         value={value}
         className={styles.inputSearch}
         type="search"
-        placeholder="Search for airports or aircompany"
+        placeholder="Search for an airport"
         onChange={handleInputChange}
       />
       <span className={styles.searchIcon}>&#128269;</span>
