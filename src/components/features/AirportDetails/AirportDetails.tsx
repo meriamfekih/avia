@@ -18,6 +18,14 @@ const AirportDetails: FC<AirportDetailsProps> = ({ airport }) => {
               <span>{airport.airport_name}</span>
             </div>
             <div className={styles.detail}>
+              <span className={styles.title}>IATA code :</span>
+              <span>{airport.iata_code}</span>
+            </div>
+            <div className={styles.detail}>
+              <span className={styles.title}>ICAO code :</span>
+              <span>{airport.icao_code}</span>
+            </div>
+            <div className={styles.detail}>
               <span className={styles.title}>country :</span>
               <span>{airport.country_name}</span>
             </div>

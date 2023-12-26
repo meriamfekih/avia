@@ -14,7 +14,7 @@ interface AirportFlightsProps {
 const AirportFlights: FC<AirportFlightsProps> = ({ airportCode }) => {
   const [offset, setOffset] = useState(0);
   const { data, isFetching, error } = useQuery({
-    queryKey: [`getFlighsFromAirport-${airportCode}-${offset}`],
+    queryKey: ["getFlighsFromAirport", airportCode, offset],
     queryFn: () => getFlighsFromAirport(airportCode, offset),
   });
 
