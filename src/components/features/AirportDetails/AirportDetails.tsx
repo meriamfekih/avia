@@ -1,6 +1,6 @@
 import { FC } from "react";
 import AirportFlights from "../AirportFlights/AirportFlights";
-import AirportsMap from "../../views/MapBox/AirportsMap";
+import AirportsMap from "../../views/AirportsMap/AirportsMap";
 import styles from "./AirportDetails.module.scss";
 import AirportMoreInfo from "../AirportMoreInfo/AirportMoreInfo";
 
@@ -16,6 +16,14 @@ const AirportDetails: FC<AirportDetailsProps> = ({ airport }) => {
             <div className={styles.detail}>
               <span className={styles.title}>airport name :</span>
               <span>{airport.airport_name}</span>
+            </div>
+            <div className={styles.detail}>
+              <span className={styles.title}>IATA code :</span>
+              <span>{airport.iata_code}</span>
+            </div>
+            <div className={styles.detail}>
+              <span className={styles.title}>ICAO code :</span>
+              <span>{airport.icao_code}</span>
             </div>
             <div className={styles.detail}>
               <span className={styles.title}>country :</span>

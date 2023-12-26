@@ -7,7 +7,7 @@ interface AirportMoreInfoProps {
 }
 const AirportMoreInfo: FC<AirportMoreInfoProps> = ({ airportName }) => {
   const { data, isFetching } = useQuery({
-    queryKey: [`getAirportMoreInfo-${airportName}`],
+    queryKey: ["getAirportMoreInfo", airportName],
     queryFn: () => getAirportMoreInfo(airportName),
   });
   return (
