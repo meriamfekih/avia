@@ -1,0 +1,16 @@
+@import '../../../variables.scss';
+
+.flightsTable {
+    background-color: #fff;
+    border-radius: 1.875rem;
+    overflow: hidden;
+    flex: 2;
+    margin: 1.875rem;
+    padding: 1.25rem;
+
+    .emptyTable {
+        font-size: 1.125rem;
+        text-align: center;
+        padding: 1.875rem;
+    }
+}

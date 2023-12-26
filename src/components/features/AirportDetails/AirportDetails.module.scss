@@ -1,0 +1,46 @@
+@import '../../../variables.scss';
+
+.flexContainer {
+    display: flex;
+    gap: 1.25rem;
+    margin: 3.125rem 1.875rem 1.875rem 1.875rem;
+
+    .airportInfos,
+    .map {
+        background-color: #fff;
+        border-radius: 1.875rem;
+        overflow: hidden;
+    }
+
+    .airportdetails {
+        flex: 1;
+
+        .airportInfos {
+            padding: 1.875rem;
+
+            .detail {
+                margin-bottom: 1.25rem;
+                color: $primary-color;
+
+                span {
+                    font-size: 1.25rem;
+
+                    &.title {
+                        color: $secondary-color;
+                        text-transform: uppercase;
+                        font-size: 1.25rem;
+                        font-weight: bold;
+                        margin-right: 1.25rem;
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+    .map {
+        flex: 2;
+    }
+}
